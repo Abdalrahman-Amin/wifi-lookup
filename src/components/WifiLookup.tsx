@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { supabase } from "@/lib/supabase";
+import Logo from "./Logo";
 
 interface WifiData {
    username: string;
@@ -36,6 +37,14 @@ export default function WifiLookup() {
 
    return (
       <div className="flex flex-col items-center justify-center min-h-screen p-4">
+         {/* Logos Section - Bigger & Horizontally Aligned */}
+         <div className="flex flex-row items-center space-x-6 mb-6">
+            <Logo src="/logo1.png" alt="Logo 1" width={100} height={100} />
+            <Logo src="/logo2.png" alt="Logo 2" width={100} height={100} />
+            <Logo src="/logo3.png" alt="Logo 3" width={100} height={100} />
+         </div>
+
+         {/* WiFi Credentials Form */}
          <Card className="p-6 w-full max-w-md shadow-lg">
             <CardContent>
                <h2 className="text-xl font-semibold mb-4">
