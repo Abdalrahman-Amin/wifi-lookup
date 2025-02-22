@@ -39,8 +39,8 @@ export default function WifiLookup() {
       <div className="flex flex-col items-center justify-center min-h-screen p-4">
          {/* Logos Section - Bigger & Horizontally Aligned */}
          <div className="flex flex-row items-center space-x-6 mb-6">
-            <Logo src="/logo2.png" alt="Logo 2" width={300} height={300} />
-            <Logo src="/logo3.png" alt="Logo 3" width={300} height={300} />
+            <Logo src="/logo2.png" alt="Logo 2" width={200} height={200} />
+            <Logo src="/logo3.png" alt="Logo 3" width={200} height={200} />
          </div>
 
          {/* WiFi Credentials Form */}
